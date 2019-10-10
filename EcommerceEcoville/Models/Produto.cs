@@ -17,8 +17,8 @@ namespace EcommerceEcoville.Models
         public string Descricao { get; set; }
         public double Preco { get; set; }
         public int Quantidade { get; set; }
-        public DateTime  CriadoEm { get; set; }
+        public DateTime CriadoEm { get; set; }
     }
 
-    
+
 }
