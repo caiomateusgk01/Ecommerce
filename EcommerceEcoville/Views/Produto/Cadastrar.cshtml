@@ -1,0 +1,22 @@
+﻿@model Produto
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Cadastrar</title>
+</head>
+<body>
+    <form asp-action="Cadastrar" method="post">
+        <label>Nome:</label>
+        <input type="text" asp-for="Nome"/><br />
+        <label>Descrição</label>
+        <input type="text" asp-for="Descricao"/><br />
+        <label>Preço</label>
+        <input type="text" asp-for="Preco"/><br />
+        <label>Quantidade</label>
+        <input type="text" asp-for="Quantidade" /><br />
+        <input type="submit" value="Cadastrar" />
+    </form>
+</body>
+</html>

@@ -12,8 +12,11 @@
 
 4 - Configurar o serviço do Banco de Dados na classe statup.cs(MVC)
 
-    - services.AddDbContext<Context>(options => options.UseSqlServer
+      services.AddScoped<ProdutoDAO>();
+            services.AddDbContext<Context>(options => options.UseSqlServer
             (Configuration.GetConnectionString("EcommerceConnection")));
+
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
 5 - Criar a string de conexão no arquivo appsettings.json
 

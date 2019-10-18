@@ -21,3 +21,5 @@ C:\Users\Caio Mateus\source\repos\EcommerceEcoville\EcommerceEcoville\obj\Debug\
 C:\Users\Caio Mateus\source\repos\EcommerceEcoville\EcommerceEcoville\obj\Debug\netcoreapp2.1\EcommerceEcoville.dll
 C:\Users\Caio Mateus\source\repos\EcommerceEcoville\EcommerceEcoville\obj\Debug\netcoreapp2.1\EcommerceEcoville.pdb
 C:\Users\Caio Mateus\source\repos\EcommerceEcoville\EcommerceEcoville\obj\Debug\netcoreapp2.1\EcommerceEcoville.csproj.CopyComplete
+C:\Users\Caio Mateus\source\repos\EcommerceEcoville\EcommerceEcoville\obj\Debug\netcoreapp2.1\Razor\Views\Produto\Cadastrar.g.cshtml.cs
+C:\Users\Caio Mateus\source\repos\EcommerceEcoville\EcommerceEcoville\obj\Debug\netcoreapp2.1\Razor\Views\Produto\Index.g.cshtml.cs
