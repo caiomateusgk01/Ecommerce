@@ -1,35 +1,30 @@
 ﻿@model Produto
-@{
-    Produto p = ViewBag.Produto;
-    
-    
-}
 
 
 <body>
     <form asp-action="Alterar" method="post">
         <fieldset>
             <legend>Alterar Produto</legend>
-        <input type="hidden" value="@p.ProdutoId" name="txtId" />
+        <input type="hidden" asp-for="ProdutoId"/>
         <div class="form-group">
             <label>Id:</label>
-            <input type="text" asp-for="ProdutoId" value="@p.ProdutoId" readonly="" class="form-control"/>
+            <input type="text" asp-for="ProdutoId" readonly="" class="form-control"/>
         </div>
             <div class="form-group">
                 <label>Nome:</label>
-                <input type="text" asp-for="Nome" class="form-control" value="@p.Nome"/>
+                <input type="text" asp-for="Nome" class="form-control"/>
             </div>
             <div class="form-group">
                 <label>Descrição</label>
-                <input type="text" asp-for="Descricao" class="form-control" value="@p.Descricao" />
+                <input type="text" asp-for="Descricao" class="form-control"/>
             </div>
             <div class="form-group">
                 <label>Preço</label>
-                <input type="text" asp-for="Preco" class="form-control" value="@p.Preco"/>
+                <input type="text" asp-for="Preco" class="form-control" />
             </div>
             <div class="form-group">
                 <label>Quantidade</label>
-                <input type="text" asp-for="Quantidade" class="form-control" value="@p.Quantidade"/>
+                <input type="text" asp-for="Quantidade" class="form-control"/>
             </div>
             <input type="submit" value="Salvar" class="btn btn-success" />
             </fieldset>

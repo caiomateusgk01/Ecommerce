@@ -1,13 +1,7 @@
 ﻿@model Produto
-
-@{
-    
-}
-    <body>
-        <form asp-action="Cadastrar" method="post">
-            <fieldset>
-                <legend>Cadastrar Produto</legend>
-
+<form asp-action="Cadastrar" method="post">
+     <fieldset>
+           <legend>Cadastrar Produto</legend>
                 <div class="form-group">
                     <label>Nome:</label>
                     <input type="text" asp-for="Nome" class="form-control" />
@@ -27,5 +21,3 @@
                 <input type="submit" class="btn btn-success" value="Cadastrar" />
             </fieldset>
         </form>
-      
-    </body>

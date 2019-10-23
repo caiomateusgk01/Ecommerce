@@ -19,9 +19,8 @@ namespace EcommerceEcoville.Controllers
         //de Actions
         public ActionResult Index()
         {
-            ViewBag.Produtos = _produtoDAO.ListarProdutos();
             ViewBag.DataHora = DateTime.Now;
-            return View();
+            return View(_produtoDAO.ListarProdutos());
         }
 
 
@@ -65,13 +64,12 @@ namespace EcommerceEcoville.Controllers
         }
         public IActionResult Alterar(int? id)
         {
-            ViewBag.Produto = _produtoDAO.BuscarProdutoId(id);
-            return View();
+            return View(_produtoDAO.BuscarProdutoId(id));
         }
         [HttpPost]
-        public IActionResult Alterar([FromBody]Produto p)
+        public IActionResult Alterar(Produto p)
         {
-            _produtoDAO.BuscarProdutoId(p.ProdutoId);
+           
             _produtoDAO.AlterarProduto(p);
             return RedirectToAction("Index");
         }
