@@ -38,7 +38,7 @@ namespace EcommerceEcoville.Dao
         }
         public void AlterarProduto(Produto p)
         {
-            _context.Entry(p).State = EntityState.Modified;
+            _context.Produtos.Update(p);
             _context.SaveChanges();
         }
     }

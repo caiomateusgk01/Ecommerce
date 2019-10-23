@@ -63,5 +63,17 @@ namespace EcommerceEcoville.Controllers
             //Remover o produto
             return RedirectToAction("Index");
         }
+        public IActionResult Alterar(int? id)
+        {
+            ViewBag.Produto = _produtoDAO.BuscarProdutoId(id);
+            return View();
+        }
+        [HttpPost]
+        public IActionResult Alterar([FromBody]Produto p)
+        {
+            _produtoDAO.BuscarProdutoId(p.ProdutoId);
+            _produtoDAO.AlterarProduto(p);
+            return RedirectToAction("Index");
+        }
     }
 }
